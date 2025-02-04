@@ -1,0 +1,30 @@
+{
+  "name": "assignment-2",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "dependencies": {
+    "asynckit": "^0.4.0",
+    "axios": "^1.7.8",
+    "body-parser": "^1.20.3",
+    "combined-stream": "^1.0.8",
+    "delayed-stream": "^1.0.0",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "follow-redirects": "^1.15.9",
+    "form-data": "^4.0.1",
+    "mime-db": "^1.52.0",
+    "mime-types": "^2.1.35",
+    "node-fetch": "^3.3.2",
+    "nodemon": "^3.1.7",
+    "proxy-from-env": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

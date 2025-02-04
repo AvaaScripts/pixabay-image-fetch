@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Image Gallery</title>
+    <style>
+        img {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Image Results for "<%= keyword %>"</h1>
+    <div class="image-container">
+        <% images.forEach(image=> { %>
+            <div>
+                <img src="<%= image.largeImageURL %>" alt="<%= image.tags %>">
+                <p><strong>Likes:</strong>
+                    <%= image.likes %>
+                </p>
+                <p><strong>Downloads:</strong>
+                    <%= image.downloads %>
+                </p>
+                <p><strong>Tags:</strong>
+                    <%= image.tags %>
+                </p>
+                <p><strong>Image Type:</strong>
+                    <%= image.type %>
+                </p>
+                <p><strong>User:</strong>
+                    <%= image.user %>
+                </p>
+                <a href="<%= image.pageURL %>" target="_blank">View on Pixabay</a>
+            </div>
+            <% }) %>
+    </div>
+</body>
+
+</html>
